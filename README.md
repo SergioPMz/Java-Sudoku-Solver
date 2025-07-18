@@ -1,14 +1,14 @@
 # 🔢 Java Sudoku Solver
 
-A simple and efficient Sudoku solver implemented in Java. This project supports solving both **decimal (1–9)** and **binary (0–1)** Sudoku puzzles using a backtracking algorithm.
+A simple and efficient sudoku solver implemented in Java. This project supports solving both **decimal (1–9)** and **binary (0–1)** Sudoku puzzles using a backtracking algorithm.
 
 ## 📌 Features
 
-- ✅ Solves standard 9x9 decimal Sudoku puzzles
+- ✅ Solves standard 9x9 decimal sudoku puzzles
 - 🔁 Solves binary sudoku puzzles
 - 📦 Selenium library to handle the interaction web-program
 - 🧠 Uses backtracking algorithm for efficient solving
-- 🖥️ Command-line based
+- 🖥️ Console based
 
 ## 🚀 How to Run
 
