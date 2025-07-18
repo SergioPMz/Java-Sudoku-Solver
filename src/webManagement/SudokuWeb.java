@@ -22,6 +22,7 @@ public abstract class SudokuWeb {
 	public SudokuWeb() {
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setPageLoadStrategy(PageLoadStrategy.NONE);
+		chromeOptions.addArguments("--log-level=3");
 		this.driver = new ChromeDriver(chromeOptions);
 	}
 	

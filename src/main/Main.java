@@ -1,6 +1,8 @@
 package main;
 import java.util.Scanner;
 
+import org.openqa.selenium.ElementClickInterceptedException;
+
 import webManagement.BinarySudokuWeb;
 import webManagement.DecimalSudokuWeb;
 import webManagement.SudokuWeb;
@@ -42,8 +44,12 @@ public class Main {
 			System.out.println("Accept the cookies and then press enter in the console");
 			sc.nextLine();
 			System.out.println("Solving.....");
-			sudokuWeb.solveWeb();
-			System.out.println("Sudoku solved! Press enter in the console to close the web");
+			try {
+				sudokuWeb.solveWeb();
+				System.out.println("Sudoku solved! Press enter in the console to close the web");
+			} catch (ElementClickInterceptedException e) {
+				System.out.println("ERROR: The cookies were not accepted, press enter to continue");
+			}
 			sc.nextLine();
 			sudokuWeb.closeDriver();
 		}
