@@ -15,6 +15,9 @@ A simple and efficient Sudoku solver implemented in Java. This project supports 
 ### Prerequisites
 
 - Java JDK (version 8 or higher) installed
-- A terminal
 
-Download the jar file available in the repository and run it from a terminal
+### Steps
+
+1. Download the JAR file from the repository (`sudoku_solver.jar`)
+
+2. Run the jar file from a terminal
